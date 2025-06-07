@@ -1,0 +1,16 @@
+# config.yaml
+# Configuration for regions and genres
+
+regions:
+  - US
+  - JP
+  - MX
+  - UK
+  - DE
+
+genres:
+  - pop music
+  - hip hop
+  - edm
+  - rock
+  - country

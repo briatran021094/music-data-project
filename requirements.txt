@@ -1,0 +1,32 @@
+# Core data handling
+pandas
+PyYAML
+
+# API requests
+requests
+python-dotenv
+
+# Google YouTube API
+google-api-python-client
+google-auth
+google-auth-oauthlib
+
+# YouTube Music API
+ytmusicapi
+
+# Spotify
+# (No extra package — using requests + manual OAuth)
+
+# Data Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine Learning / Clustering
+scikit-learn
+
+# Sentiment analysis
+textblob
+
+# Dashboard / Web app
+streamlit

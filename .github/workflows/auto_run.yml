@@ -1,0 +1,35 @@
+# .github/workflows/auto_run.yml
+name: Auto Run Master Music Analysis
+
+on:
+  workflow_dispatch: # Manual run button on GitHub
+  schedule:
+    - cron: "0 6 * * *"  # Runs daily at 6:00 AM UTC
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run pipeline
+        run: |
+          python3 run_master_music_analysis.py
+
+      - name: Upload combined CSV artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: combined_music_data
+          path: combined_music_data.csv

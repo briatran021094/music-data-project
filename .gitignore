@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Secrets
+.env
+oauth.json
+
+# Data files
+*.db
+*.sqlite
+combined_music_data.csv
+tableau_ready_music_data.csv
+powerbi_ready_music_data.csv
+
+# System files
+.DS_Store
+Thumbs.db
